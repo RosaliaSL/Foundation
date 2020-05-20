@@ -1,6 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.*;
 class lec16{
+    static Scanner scn= new Scanner(System.in);
 
 public static void phoneKeys(String[] arr, String ques, String ans){
     if(ques.length()==0){
@@ -60,7 +61,6 @@ public static ArrayList<String> sirPhoneKeysReturn(String[] arr, String ques){
 }
 
 public static int exitMaze(int sr, int sc, int er, int ec, String path){
-
     if( sr==er && sc==ec){
         System.out.println(path);
         return 1;
@@ -74,16 +74,31 @@ public static int exitMaze(int sr, int sc, int er, int ec, String path){
     }
     return  ans;
 }
-
-
-
-
+public static int destination(int sr, int sc, int er, int ec, String path){
+    if(sr==er && sc==ec){
+        System.out.println(path);
+        return 1;
+    }
+    int ans=0;
+    if(sr+1<=er){
+        ans+= destination(sr+1, sc, er, ec, path+'D');
+    }
+    if(sc+1<=ec){
+        ans+= destination(sr, sc+1, er, ec, path+'L');
+    }
+    return ans;
+}
 public static void main(String[] args){
     // String[] keypad={" .",";,","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
 
     // ArrayList<String> ans= sirPhoneKeysReturn(keypad, "852");
     // System.out.println(ans);
-    System.out.print(exitMaze(0, 0, 2, 2, ""));
+    // System.out.print(exitMaze(1, 1, 2, 2, ""));
+    int sr = scn.nextInt();
+    int sc= scn.nextInt();
+    int er= scn.nextInt();
+    int ec = scn.nextInt();
+     System.out.println(destination(sr, sc, er, sc,""));
 
  
     

@@ -77,21 +77,24 @@ class lec18{
                 encoding(ques.substring(2), ans+ch);
             }
         }
+
        
     }
     public static void main(String[] args){
-        String path="";
-        int[][] arr = {{0,0,0,0},
-                       {0,1,1,0},
-                       {0,1,0,0},
-                       {0,0,0,0}};
-        int[][] arr1= new int [5][5];
-        arr1[1][3]=1;
-        arr1[2][0]=1;
-        arr1[3][2]=1;
-    // oneMaze(0, 0, 3, 3, arr, path);
-    System.out.println(oneMazeReturn(0, 0, 4, 4, arr1, path));
-
+    //     String path="";
+    //     int[][] arr = {{0,0,0,0},
+    //                    {0,1,1,0},
+    //                    {0,1,0,0},
+    //                    {0,0,0,0}};
+    //     int[][] arr1= new int [5][5];
+    //     arr1[1][3]=1;
+    //     arr1[2][0]=1;
+    //     arr1[3][2]=1;
+    // // oneMaze(0, 0, 3, 3, arr, path);
+    // System.out.println(oneMazeReturn(0, 0, 4, 4, arr1, path));
+    String ques = scn.nextLine();
+    encoding(ques, "");
+    
 
     }
 }

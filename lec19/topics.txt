@@ -1,0 +1,7 @@
+DP was started
+1. Memozation
+2. Tabulation
+
+2 questions were  covered
+1. Fibonacci
+2.

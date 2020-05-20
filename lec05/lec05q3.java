@@ -1,4 +1,4 @@
-// Addition of elements in an arrya
+// Addition of elements in an array
 
 import java.util.*;
 class lec05q3{

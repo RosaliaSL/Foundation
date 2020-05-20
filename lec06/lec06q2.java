@@ -25,9 +25,7 @@ class lec06q2{
         if(r<0){
             r= arr.length+r;
         }
-
         reverse(arr, arr.length-r, arr.length-1);
-       
         reverse(arr, 0, arr.length-r-1);
         reverse(arr, 0, arr.length-1);
 

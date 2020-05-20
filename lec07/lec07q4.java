@@ -13,7 +13,7 @@ class lec07q4{
             pow=pow*2;
         }
         int count =0;
-        while(count <pow){
+        while(count<pow){
             int cc= count;
             int length=0;
             while(cc!=0){
